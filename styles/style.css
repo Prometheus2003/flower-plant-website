@@ -1,0 +1,9 @@
+img {}
+
+.row {
+    height: 400px;
+}
+
+.intro {
+    display: flex;
+}
