@@ -6,12 +6,493 @@
     font-variation-settings: "wdth" 100;
 }
 
-img {}
-
-.row {
-    height: 400px;
+.display-flex {
+    display: flex;
 }
 
-.intro {
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+    width: 1140px;
+    height: 71px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-weight: 400;
+    color: #8987a1;
+    gap: 48px;
+
+
+}
+
+.nav-item {
+    list-style: none;
+    margin-right: 48px;
+}
+
+.home a {
+    font-weight: 700;
+    font-size: 16px;
+    color: #252432;
+
+}
+
+.cart a {
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+    color: #000;
+}
+
+.cart i {
+
+    font-size: 18px;
+}
+
+.banner {
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    width: 1140px;
+    height: 461px;
+    margin: 0 auto;
+    margin-top: 150px;
+
+}
+
+.banner img {
+    width: 570px;
+    height: 355px;
+}
+
+.banner-data {
+    width: 570px;
+    height: 299px;
+}
+
+.banner-title {
+    font-size: 65px;
+    font-weight: 700px;
+    ;
+}
+
+.black {
+    color: #000;
+}
+
+.orange {
+    color: #e3681a;
+}
+
+.banner-description {
+    font-weight: 400;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+    max-width: 500px;
+    line-height: 1.5;
+}
+
+.moto {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    gap: 8px;
+}
+
+.moto-headline {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 0;
+
+}
+
+.moto-description {
+    font-weight: 400;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+    max-width: 700px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
+.store {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    max-width: 1140px;
+    margin: 0 auto;
+
+
+}
+
+.store-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    align-items: start;
+}
+
+
+
+.store-card {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+    background: #fff;
+    text-align: center;
+}
+
+.store-card img {
+    width: 270px;
+    height: 322.94px;
+    display: block;
+}
+
+.card-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    width: 100%;
+}
+
+
+.card-name {
+    font-size: 22px;
+    font-weight: 500;
+    color: rgba(17, 17, 17, 1);
+    margin: 0;
+
+}
+
+.card-price {
+    font-size: 22px;
+    font-weight: 700;
+    color: rgba(17, 17, 17, 1);
+    margin: 0;
+}
+
+.btn-primary {
+    padding: 20px 70px;
+    border: none;
+    background: rgba(233, 90, 8, 1);
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:576px) {
+
+    .navbar,
+    .nav-links,
+    .banner {
+        flex-direction: column;
+    }
+}
+
+.verified {
+    position: relative;
+    gap: 100px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+
+.main-image {
+    display: block;
+    width: 540px;
+    height: 597px;
+}
+
+.badge {
+    position: absolute;
+    top: -140px;
+    left: 400px;
+    width: 286px;
+    height: 286px;
+}
+
+.verified-description {
+    width: 540px;
+    height: 521px;
+
+}
+
+.description-heading {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.description-list {
+    font-size: 22px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.latest-deals {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.latest-deals span {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.latest-deals h2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.latest-deals p {
+    font-size: 22px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 15px;
+}
+
+.deals-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+        "small1 large"
+        "small2 large";
+    gap: 25px;
+    margin-top: 150px;
+}
+
+.deal-card {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border-radius: 22px;
+    width: 387px;
+    height: 201px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.deal-card.large {
+    grid-area: large;
+    width: 753px;
+    height: 423px;
+}
+
+.deal-overlay {
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.deal-overlay h3 {
+    margin: 0 0 .5rem;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.deal-overlay h1 {
+    margin: 0 0 .5rem;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.deal-overlay .btn {
+
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.deal-overlay .btn:hover {
+    background: none;
+}
+
+@media(max-width: 768px) {
+    .deals-grid {
+        grid-template-columns: 1fr;
+        grid-template-areas: none;
+    }
+
+    .deal-card.large {
+        min-height: 200px;
+    }
+}
+
+.subscribe-hero {
+    position: relative;
+    min-height: 533px;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    background-size: cover;
+    background-position: center;
+    margin: 3rem 0;
+    overflow: hidden;
+
+}
+
+.subscribe-overlay {
+    position: absolute;
+    inset: 0;
+}
+
+.subscribe-inner {
+    position: relative;
+    text-align: center;
+    width: min(900px, 92%);
+    color: #fff;
+}
+
+.subscribe-inner h2 {
+    font-weight: 700;
+    font-size: 50px;
+
+}
+
+.subscribe-form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 0;
+    width: min(644px, 100%);
+    margin: 0 auto;
+    background: #fff;
+    overflow: hidden;
+
+}
+
+.subscribe-form input {
+    border: none;
+    padding: .9rem 1rem;
+    outline: none;
+}
+
+.subscribe-form button {
+    border: none;
+    padding: .9rem 1.2rem;
+    background: #d14b2a;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.subscribe-form button:hover {
+    filter: brightness(.95);
+}
+
+
+.visually-hidden {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+    border: 0;
+    padding: 0;
+    margin: -1px;
+}
+
+@media (max-width: 520px) {
+    .subscribe-form {
+        grid-template-columns: 1fr;
+        border-radius: 10px;
+    }
+
+    .subscribe-form button {
+        border-top: 1px solid #eee;
+    }
+}
+
+.site-footer {
+    width: 100%;
+    padding: 48px 0;
+}
+
+.footer-inner {
+    width: min(1200px, 92%);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.2fr 1.2fr 0.8fr;
+    align-items: start;
+}
+
+.footer-logo {
+    display: block;
+    max-width: 120px;
+    height: auto;
+    gap: 10px
+}
+
+.footer-copy {
+    color: #6b7280;
+    max-width: 34ch;
+    margin-top: 0.5rem;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem 2rem;
+}
+
+.footer-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links a {
+    display: block;
+    padding: 0.55rem 0;
+    color: #6b7280;
+    text-decoration: none;
+    font-weight: 400;
+    gap: 20px;
+}
+
+.footer-links a:hover {
+    color: #d14b2a;
+}
+
+
+.footer-social {
+    display: flex;
+    gap: 25px;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.footer-social .soc img {
+    display: block;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+@media (max-width: 900px) {
+    .footer-inner {
+        grid-template-columns: 1fr;
+        gap: 1.6rem;
+    }
+
+    .footer-social {
+        justify-content: flex-start;
+    }
 }
