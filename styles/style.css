@@ -725,13 +725,14 @@
         font-size: 14px;
         margin: 0 0 10px;
     }
+}
 
-    @media (max-width: 393px) {
-        .banner {
-            margin-bottom: -100px;
-        }
-
-        .moto {
-            margin-top: 0;
-        }
+@media (max-width: 393px) {
+    .banner {
+        margin-bottom: -100px;
     }
+
+    .moto {
+        margin-top: 0;
+    }
+}
